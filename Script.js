@@ -12,13 +12,12 @@ ct.data.forEach((crp)=>{
     <div><h2>${crp.rank}</h2></div>
     <div><h2>${crp.name} ${crp.symbol}</h2></div>
      <div><h2 class="per">${parseFloat(crp.changePercent24Hr).toFixed(2)}%</h2></div>
-    <div><h2 class="pp">₹${parseFloat(crp.priceUsd).toFixed(2)} USD</h2>
+    <div><h2 class="pp">$${parseFloat(crp.priceUsd).toFixed(2)}</h2>
     </div>
     <div><button><a href="${crp.explorer}" target="_blank"> Track </a></button></div>
     </div>`
 })
 document.getElementById("datacrp").innerHTML=crptdata;
-
 });
 
 // let p = fetch("https://api.coincap.io/v2/assets");

@@ -1,6 +1,6 @@
 .crptraw {
     width: 100%;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: left;
     gap: 56px;
@@ -8,4 +8,40 @@
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    justify-content: space-between;
+    grid-template-columns: 0.2fr 3fr 1fr 1fr 1fr;
+}
+.main{
+background:url("./images/6256878.jpg") no-repeat center ;
+background-size:cover ;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.innercol{
+    width: 75% !important;
+    height: 75vh;
+    position: relative;
+    overflow: auto;
+    color: #fff !important;
+    padding: 40px;
+    background: #0c0c31bd;
+    position: relative;
+}
+.heading h1{
+font-size: 70px;
+font-family:serif;
+font-weight: 400;
+padding: 0;
+margin: 0 0px;
+}
+
+.innerheder {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 30px 0px !important;
+  
 }
