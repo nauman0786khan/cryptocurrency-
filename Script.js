@@ -14,7 +14,7 @@ ct.data.forEach((crp)=>{
      <div><h2 class="per">${parseFloat(crp.changePercent24Hr).toFixed(2)}%</h2></div>
     <div><h2 class="pp">$${parseFloat(crp.priceUsd).toFixed(2)}</h2>
     </div>
-    <div><button><a href="${crp.explorer}" target="_blank"> Track </a></button></div>
+    <div><button class="btn"><a href="${crp.explorer}"target="_blank"> Track </a></button></div>
     </div>`
 })
 document.getElementById("datacrp").innerHTML=crptdata;
